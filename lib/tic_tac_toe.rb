@@ -50,4 +50,17 @@ class TicTacToe
     end
   end
 
+  def turn
+    puts "Pick a spot between 1-9"
+    player_input = gets.strip
+    index = input_to_index(player_input)
+    if valid_move?(index)
+      token = current_player
+      move(index, token)
+      display_board
+    else
+      turn
+    end
+  end
+
 end
