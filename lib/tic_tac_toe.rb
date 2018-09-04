@@ -89,6 +89,8 @@ end
       "X"
     elsif @board[winning_token] == "O"
       "O"
+    else !won?
+      nil
     end
   end
 
