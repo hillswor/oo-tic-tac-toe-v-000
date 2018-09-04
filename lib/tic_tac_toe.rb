@@ -69,6 +69,7 @@ class TicTacToe
         return combo
     end
   end
+end
 
   def full?
     @board.all?{|moves| moves == "X" || moves == "O"}
@@ -90,5 +91,5 @@ class TicTacToe
       "O"
     end
   end
-end
 
+end
