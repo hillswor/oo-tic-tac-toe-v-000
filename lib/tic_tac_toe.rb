@@ -84,13 +84,12 @@ end
   end
 
   def winner
+    return nil if !won?
     winning_token = won?[0]
     if @board[winning_token] == "X"
       "X"
     elsif @board[winning_token] == "O"
       "O"
-    else !won?
-      nil
     end
   end
 
