@@ -25,7 +25,6 @@ class TicTacToe
   def input_to_index
     input = gets.strip
     index = input.to_i - 1
-
   end
 
 end
