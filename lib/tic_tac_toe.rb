@@ -88,12 +88,14 @@ class TicTacToe
   end
 
   def winner
-    if won? && position_1 == "X"
+    winning_token = won?[0]
+    if winning_token == "X"
       "X"
-    elsif won? && position_1 == "O"
+    elsif winning_token == "O"
       "O"
     end
   end
+
 
 
 end
