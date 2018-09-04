@@ -87,5 +87,13 @@ class TicTacToe
     won? || draw?
   end
 
+  def winner
+    if won? && position_1 == "X"
+      "X"
+    elsif won? && position_1 == "O"
+      "O"
+    end
+  end
+
 
 end
