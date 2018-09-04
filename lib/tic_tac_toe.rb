@@ -75,4 +75,9 @@ class TicTacToe
     end
   end
 
+  def full?
+    @board.all?{|moves| moves == "X" || moves == "O"
+    end
+  end  
+
 end
