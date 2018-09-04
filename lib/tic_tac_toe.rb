@@ -85,9 +85,9 @@ end
 
   def winner
     winning_token = won?[0]
-    if winning_token == "X"
+    if @board[winning_token] == "X"
       "X"
-    elsif winning_token == "O"
+    elsif @board[winning_token] == "O"
       "O"
     end
   end
